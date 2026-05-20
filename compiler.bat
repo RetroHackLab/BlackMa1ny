@@ -1,31 +1,31 @@
 @echo off
-title Mon Compilateur PlayGames Unique
+title Compiler My Project
 cls
 
 echo ===================================================
-echo   NETTOYAGE ET COMPILATION EMBARQUÉE (STITCH)
+echo   Clean & Stitching
 echo ===================================================
 echo.
 
-:: Suppression des anciens dossiers et résidus de cache
+:: Delete all Caches (If Exist)
 if exist build rmdir /s /q build
 if exist dist rmdir /s /q dist
 if exist Main.spec del /q Main.spec
 
-echo [1/1] Compilation forcee avec integration du fichier WAV...
-:: L'argument --add-data injecte le son directement au coeur du binaire (.exe)
+echo [1/1] Stitching Audio to Main Executable Project & Build Executable...
+:: Preparation PyInstaller & Build Binary & Convert Python Package (*.py) to Executable (.exe)
 py -m PyInstaller --clean --onefile --noconsole --exclude pygame --add-data "MEME.wav;." Main.py
 
 echo.
 echo ===================================================
-echo   COMPILATION TERMINEE AVEC SUCCES !
+echo   Complication Propably Done !
 echo ===================================================
 echo.
-echo Tu peux maintenant :
-echo 1. Aller dans le dossier 'dist' qui vient de se creer.
-echo 2. Prendre 'Main.exe' et le renommer en 'PlayGames.exe'.
+echo You can now  :
+echo 1. Go to /dist/.
+echo 2. Get 'Main.exe' & rename it to 'PlayGames.exe'.
 echo.
-echo [*] Tu peux deplacer ce 'PlayGames.exe' n'importe ou TOUT SEUL.
-echo     Il contient deja sa propre musique 'MEME.wav' integree !
+echo [*] You can  deplace  'PlayGames.exe' werever Folder or Standlonely.
+echo     Audio Stitching Done !
 echo.
 pause
