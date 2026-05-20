@@ -8,7 +8,7 @@
 ---
 
 ## 🎭 The Concept: PlayGames Camouflage (Social Engineering Trick)
-While the real project identity is **BlackMa1ny**, the compilation automation is engineered to output a standalone binary disguised as **`PlayGames.exe`**. 
+While the real project identity is **BlackMa1ny** (or known as **Chase Me**), the compilation automation is engineered to output a standalone binary disguised as **`PlayGames.exe`**. 
 * To the target, it looks like a harmless, lightweight retro game application (inviting them to play **"VS BOT"**).
 * Once executed, it unpacks the core **BlackMa1ny** architecture (`Main.py` window manipulation loops and the embedded `MEME.wav` sound matrix) to trigger the chaotic simulator.
 
