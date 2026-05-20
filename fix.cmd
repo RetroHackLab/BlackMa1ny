@@ -1,6 +1,6 @@
 @echo off
 title Emergency Exit - PlayGames Fix
-echo Nettoyage en cours... Securite Normale Normale.
+echo Cleaning Tasks & Emergency Exit .
 echo ----------------------------------------------
 
 taskkill /f /im python.exe
@@ -9,5 +9,5 @@ taskkill /f /im BlackMa1ny.exe
 taskkill /f /im cmd.exe
 
 echo ----------------------------------------------
-echo Tout est nettoye avec succes !
+echo All Tasks cleaned succesfuly !
 pause
