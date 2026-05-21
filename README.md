@@ -11,7 +11,7 @@
 While the real project identity is **BlackMa1ny** (or known as **Chase Me**), the compilation automation is engineered to output a standalone binary disguised as **`PlayGames.exe`**. 
 * To the target, it looks like a harmless, lightweight retro game application (inviting them to play **"VS BOT"**).
 * Once executed, it unpacks the core **BlackMa1ny** architecture (`Main.py` window manipulation loops and the embedded `MEME.wav` sound matrix) to trigger the chaotic simulator.
-
+<img width="482" height="321" alt="Image" src="https://github.com/user-attachments/assets/644e7ace-3627-4873-a762-42eb9b74d10d" />
 ---
 
 ## ⚠️ Infrastructure & System Compatibility
