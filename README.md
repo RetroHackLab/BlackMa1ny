@@ -33,10 +33,10 @@ While the real project identity is **BlackMa1ny** (or known as **Chase Me**), th
 3. Open your terminal and install the compiler dependency:
    ```bash
    pip install pyinstaller
-if exist build rmdir /s /q build
-if exist dist rmdir /s /q dist
-if exist Main.spec del /q Main.spec
-py -m PyInstaller --clean --onefile --noconsole --exclude pygame --add-data "MEME.wav;." Main.py
+   if exist build rmdir /s /q build
+   if exist dist rmdir /s /q dist
+   if exist Main.spec del /q Main.spec
+   py -m PyInstaller --clean --onefile --noconsole --exclude pygame --add-data "MEME.wav;." Main.py
 4. The compiled binary will be generated inside the newly created `dist/` folder as **`PlayGames.exe`** (carrying the hidden BlackMa1ny engine).
 
 ---
